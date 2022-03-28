@@ -39,9 +39,9 @@ def start_timer():
         reps = 0
 
     reps += 1
-    work_sec = 3#WORK_MIN * 60
-    short_break_sec = 3#SHORT_BREAK_MIN * 60
-    long_break_sec = 5#LONG_BREAK_MIN * 60
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
     if reps % 2 == 0 and reps % 8 == 0:
         count_down(long_break_sec)
         timer_label.config(text="Break", fg=BROWN)
